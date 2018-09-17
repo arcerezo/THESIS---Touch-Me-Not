@@ -11,14 +11,18 @@ public class PlayerController : MonoBehaviour {
     public delegate void OnFocusChanged(Interactable newFocus);
 	public OnFocusChanged onFocusChangedCallback;
     public GameObject dialogueTrigger;
-    public bool canMove = true;
+    public bool canMove;
     
     void Start() {
         anim = GetComponent<Animator>();
-        canMove = true;
     }
 
     void Update() {
+        if(!canMove) {
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            return;
+        }
+
         float moveHorizontal = Input.GetAxisRaw ("Horizontal");
         float moveVertical = Input.GetAxisRaw ("Vertical");
         

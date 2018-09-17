@@ -9,15 +9,25 @@ public class DialogueManager : MonoBehaviour {
 	public Text dialogueText;
 	public Animator animator;
 	private Queue<string> sentences;
+	private PlayerController thePlayer;
 
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
+		thePlayer = FindObjectOfType<PlayerController>();
+	}
+
+	void Update () {
+		if(Input.GetKeyDown(KeyCode.Space)) {
+			DisplayNextSentence();
+		}
 	}
 
 	public void StartDialogue (Dialogue dialogue)
 	{
 		animator.SetBool("IsOpen", true);
+
+		thePlayer.canMove = false;
 
 		nameText.text = dialogue.name;
 
@@ -27,8 +37,7 @@ public class DialogueManager : MonoBehaviour {
 		{
 			sentences.Enqueue(sentence);
 		}
-
-		DisplayNextSentence();
+			DisplayNextSentence();
 	}
 
 	public void DisplayNextSentence ()
@@ -57,6 +66,7 @@ public class DialogueManager : MonoBehaviour {
 	void EndDialogue()
 	{
 		animator.SetBool("IsOpen", false);
+		thePlayer.canMove = true;
 	}
 
 }
