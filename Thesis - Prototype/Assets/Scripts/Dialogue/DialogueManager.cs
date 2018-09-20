@@ -11,7 +11,6 @@ public class DialogueManager : MonoBehaviour {
 	private Queue<string> sentences;
 	private PlayerController thePlayer;
 
-	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
 		thePlayer = FindObjectOfType<PlayerController>();

@@ -43,12 +43,12 @@ public class PlayerController : MonoBehaviour {
     void OnTriggerEnter(Collider coll)
     {
         // Interact with items
-        if(coll.gameObject.name == "Item") {
+        if(coll.gameObject.tag == "Item") {
             SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
 
         }
         //Interact with NPC
-        else if(coll.gameObject.name == "NPC") {
+        else if(coll.gameObject.tag == "NPC") {
             dialogueTrigger.SetActive(true);
             SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
         }
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerExit(Collider coll)
     {
-        if(coll.gameObject.name == "NPC")
+        if(coll.gameObject.tag == "NPC")
         {
             dialogueTrigger.SetActive(false);
             RemoveFocus();

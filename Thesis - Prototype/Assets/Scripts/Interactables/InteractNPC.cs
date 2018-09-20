@@ -1,10 +1,17 @@
 ﻿using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 public class InteractNPC : Interactable {
+
+	public Sprite npcSprite;
+	public Image activeNPC;
 	public override void Interact() {
 		base.Interact();
 
 		InteractWithNPC();
+
+		activeNPC.sprite = npcSprite;
 	}
 
 	void InteractWithNPC() {
