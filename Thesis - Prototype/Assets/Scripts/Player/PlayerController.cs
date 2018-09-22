@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour {
     public GameObject dialogueTrigger;
     public bool canMove;
     
+    void Awake () {
+        DontDestroyOnLoad(this.gameObject);
+    }
     void Start() {
         anim = GetComponent<Animator>();
     }

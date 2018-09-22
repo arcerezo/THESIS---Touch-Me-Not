@@ -1,25 +1,69 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using System.Collections;
+ 
 public class CameraFollow : MonoBehaviour {
+    public Transform target;
+    public float walkDistance;
+    public float runDistance;
+    public float height;
+    public float xSpeed = 250.0f;
+    public float ySpeed = 120.0f;
+   
+    private Transform _myTransform;
+    private float x;
+    private float y;
+    private bool camButtonDown = false;
 
-	public GameObject player;       //Public variable to store a reference to the player game object
-
-
-    private Vector3 offset;         //Private variable to store the offset distance between the player and camera
-
-    // Use this for initialization
-    void Start () 
-    {
-        //Calculate and store the offset value by getting the distance between the player's position and camera's position.
-        offset = transform.position - player.transform.position;
+    void Awake () {
+        DontDestroyOnLoad(this.gameObject);
     }
-    
-    // LateUpdate is called after Update each frame
-    void LateUpdate () 
-    {
-        // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = player.transform.position + offset;
+    // Use this for initialization
+    void Start () {
+        if(target == null)
+            Debug.LogWarning("We do not have a target");
+       
+        _myTransform = transform;
+    CameraSetUp();
+    }
+   
+    void Update() {
+        if(Input.GetMouseButtonDown(1)) {  //Use the Input Manager to make this user selectable button
+            camButtonDown = true;
+        }
+        if(Input.GetMouseButtonUp(1)) {
+            camButtonDown = false;
+        }
+    }
+   
+    //this function is called after all of the Update functions are done.
+    void LateUpdate() {
+//      _myTransform.position = new Vector3(target.position.x, target.position.y + height, target.position.z - walkDistance);
+//      _myTransform.LookAt(target);       
+       
+    if(camButtonDown) {  
+        x += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
+        y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
+       
+//      y = ClamAngle(y, yMinLimit, yMaxLimit);
+           
+        Quaternion rotation = Quaternion.Euler(y, x, 0);
+        Vector3 position = rotation * new Vector3(0.0f, 0.0f, -walkDistance) + target.position;
+       
+        _myTransform.rotation = rotation;
+        _myTransform.position = position;
+   
+        }
+        else {
+            _myTransform.position = new Vector3(target.position.x, target.position.y + height, target.position.z - walkDistance);
+            _myTransform.LookAt(target);
+            x = 0;
+            y = 0;
+        }
+       
+    }
+   
+    public void CameraSetUp() {
+        _myTransform.position = new Vector3(target.position.x, target.position.y + height, target.position.z - walkDistance);
+        _myTransform.LookAt(target);
     }
 }
