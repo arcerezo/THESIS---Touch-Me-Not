@@ -1,27 +1,17 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour {
 
 	public Animator animator;
-	public int levelToLoad;
-	int sceneIndex;
+	public Transform spawnpoint;
 
-	void Start () {
-		sceneIndex = SceneManager.GetActiveScene().buildIndex;
+	void Start ()
+	{
+		GameObject.Find("Player").transform.position = spawnpoint.transform.position;
 	}
 
-	public void FadeToLevel()
+	public void FadeToLevel ()
 	{
 		animator.SetTrigger("FadeOut");
-	}
-
-	public void OnFadeComplete ()
-	{
-        SceneManager.LoadScene(sceneIndex + 1);
-	}
-
-	public void LoadPreviousScene () {
-		SceneManager.LoadScene(sceneIndex - 1);
 	}
 }

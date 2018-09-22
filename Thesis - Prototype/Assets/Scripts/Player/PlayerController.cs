@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-    public GameObject player;
     public float movementSpeed = 0.5f;
     static Animator anim;
     public Interactable focus;

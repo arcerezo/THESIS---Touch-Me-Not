@@ -15,6 +15,7 @@ public class InventoryUI : MonoBehaviour {
 	{
 		inventory = Inventory.instance;
 		inventory.onItemChangedCallback += UpdateUI;
+		inventoryUI.SetActive(false);
 	}
 
 	// Check to see if we should open/close the inventory
