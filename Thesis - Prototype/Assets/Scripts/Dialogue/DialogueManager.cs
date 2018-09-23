@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour {
 	public Animator animator;
 	private Queue<string> sentences;
 	private PlayerController thePlayer;
+	private DialogueTrigger dTrigger;
+	public GameObject dialogueTrigger;
 
 	void Start () {
 		sentences = new Queue<string>();
@@ -19,6 +21,11 @@ public class DialogueManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			DisplayNextSentence();
+		}
+		
+		if (dialogueTrigger.activeInHierarchy)
+		{
+			dTrigger = FindObjectOfType<DialogueTrigger>();
 		}
 	}
 
@@ -66,6 +73,7 @@ public class DialogueManager : MonoBehaviour {
 	{
 		animator.SetBool("IsOpen", false);
 		thePlayer.canMove = true;
+		dTrigger.UnlockDialogue();
 	}
 
 }

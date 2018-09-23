@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
-        if(!canMove) {
+        if (!canMove) {
             GetComponent<Rigidbody>().velocity = Vector3.zero;
             return;
         }
@@ -29,12 +29,15 @@ public class PlayerController : MonoBehaviour {
         float moveVertical = Input.GetAxisRaw ("Vertical");
         
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        if(movement != Vector3.zero) {
+
+        if (movement != Vector3.zero) {
             Quaternion lookRotation = Quaternion.LookRotation(movement);
             transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, movementSpeed * Time.deltaTime);
         }
+
         transform.Translate (movement * movementSpeed * Time.deltaTime, Space.World);
-        if(moveVertical != 0 || moveHorizontal != 0) {
+
+        if (moveVertical != 0 || moveHorizontal != 0) {
             anim.SetBool ("IsRunning", true);
         }
         else {
@@ -45,12 +48,12 @@ public class PlayerController : MonoBehaviour {
     void OnTriggerEnter(Collider coll)
     {
         // Interact with items
-        if(coll.gameObject.tag == "Item") {
+        if (coll.gameObject.tag == "Item") {
             SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
 
         }
         //Interact with NPC
-        else if(coll.gameObject.tag == "NPC") {
+        else if (coll.gameObject.tag == "NPC") {
             dialogueTrigger.SetActive(true);
             SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
         }
@@ -58,7 +61,7 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerExit(Collider coll)
     {
-        if(coll.gameObject.tag == "NPC")
+        if (coll.gameObject.tag == "NPC")
         {
             dialogueTrigger.SetActive(false);
             RemoveFocus();

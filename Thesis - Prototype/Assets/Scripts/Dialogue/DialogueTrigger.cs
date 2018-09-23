@@ -5,18 +5,28 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour {
 
 	public Dialogue dialogue;
+	public bool lockDialogue = false;
 
 	void Update()
 	{
 		if(Input.GetKeyDown(KeyCode.E))
 		{
 			TriggerDialogue();
+			lockDialogue = true;
+			Debug.Log("locked");
 		}
 	}
 
 	public void TriggerDialogue ()
 	{
-		FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+		if(!lockDialogue)
+		{
+			FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+		}
 	}
 
+	public void UnlockDialogue ()
+	{
+		lockDialogue = false;
+	}
 }
