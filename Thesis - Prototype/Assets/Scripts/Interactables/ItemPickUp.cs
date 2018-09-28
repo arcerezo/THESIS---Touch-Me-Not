@@ -5,6 +5,11 @@ public class ItemPickUp : Interactable {
 	public Item item;	// Item to put in the inventory if picked up
 
 	// When the player interacts with the item
+	
+	void Start () 
+	{
+		
+	}
 	public override void Interact()
 	{
 		base.Interact();

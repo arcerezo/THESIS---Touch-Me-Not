@@ -14,9 +14,6 @@ public class CameraFollow : MonoBehaviour {
     private float y;
     private bool camButtonDown = false;
 
-    void Awake () {
-        DontDestroyOnLoad(this.gameObject);
-    }
     // Use this for initialization
     void Start () {
         if(target == null)
@@ -25,6 +22,10 @@ public class CameraFollow : MonoBehaviour {
         _myTransform = transform;
     CameraSetUp();
     }
+
+    // void Awake () {
+    //     DontDestroyOnLoad(this.gameObject);
+    // }
    
     void Update() {
         if(Input.GetMouseButtonDown(1)) {  //Use the Input Manager to make this user selectable button

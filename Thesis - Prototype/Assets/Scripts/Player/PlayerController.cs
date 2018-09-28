@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+
     public float movementSpeed = 0.5f;
     static Animator anim;
     public Interactable focus;
     
     public delegate void OnFocusChanged(Interactable newFocus);
 	public OnFocusChanged onFocusChangedCallback;
-    public GameObject dialogueTrigger;
+    public GameObject dialogueTriggerS, dialogueTriggerD;
     public bool canMove;
-    
-    void Awake () {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    // void Awake () {
+    //     DontDestroyOnLoad(this.gameObject);
+    // }
     void Start() {
         anim = GetComponent<Animator>();
     }
@@ -50,20 +50,26 @@ public class PlayerController : MonoBehaviour {
         // Interact with items
         if (coll.gameObject.tag == "Item") {
             SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
+        }
 
-        }
         //Interact with NPC
-        else if (coll.gameObject.tag == "NPC") {
-            dialogueTrigger.SetActive(true);
-            SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
+        else if(coll.gameObject.name == "Sybila")
+        {
+            dialogueTriggerS.SetActive(true);
         }
+        else if (coll.gameObject.name == "Damaso")
+        {
+            dialogueTriggerD.SetActive(true);
+        }
+        SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
     }
 
     void OnTriggerExit(Collider coll)
     {
         if (coll.gameObject.tag == "NPC")
         {
-            dialogueTrigger.SetActive(false);
+            dialogueTriggerS.SetActive(false);
+            dialogueTriggerD.SetActive(false);
             RemoveFocus();
         }
     }
