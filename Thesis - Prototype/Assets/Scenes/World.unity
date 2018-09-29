@@ -2962,6 +2962,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1455592694839736, guid: ce47c52c630305d4191719e915bee77b, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce47c52c630305d4191719e915bee77b, type: 2}
   m_IsPrefabAsset: 0
@@ -3024,6 +3028,11 @@ Prefab:
       propertyPath: walkDistance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114378453529062644, guid: fb9981f3e222bf74d9c93551cc6bbe98,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 889889796}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb9981f3e222bf74d9c93551cc6bbe98, type: 2}
   m_IsPrefabAsset: 0
