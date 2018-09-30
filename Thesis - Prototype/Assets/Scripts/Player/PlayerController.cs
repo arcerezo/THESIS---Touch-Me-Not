@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 	public OnFocusChanged onFocusChangedCallback;
     public GameObject dialogueTriggerS, dialogueTriggerD;
     public bool canMove;
+    
     // void Awake () {
     //     DontDestroyOnLoad(this.gameObject);
     // }

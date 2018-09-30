@@ -28,5 +28,6 @@ public class DialogueTrigger : MonoBehaviour {
 	public void UnlockDialogue ()
 	{
 		lockDialogue = false;
+		Debug.Log("unlocked");
 	}
 }

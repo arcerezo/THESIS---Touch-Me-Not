@@ -9,13 +9,14 @@ public class DialogueManager : MonoBehaviour {
 	public Text dialogueText;
 	public Animator animator;
 	private Queue<string> sentences;
-	private PlayerController thePlayer;
-	private DialogueTrigger dTrigger;
+	private Movement thePlayer;
+	public DialogueTrigger dTriggerS;
+	public DialogueTrigger dTriggerD;
 	public GameObject dialogueTrigger;
 
 	void Start () {
 		sentences = new Queue<string>();
-		thePlayer = FindObjectOfType<PlayerController>();
+		thePlayer = FindObjectOfType<Movement>();
 	}
 
 	void Update () {
@@ -25,7 +26,8 @@ public class DialogueManager : MonoBehaviour {
 		
 		if (dialogueTrigger.activeInHierarchy)
 		{
-			dTrigger = FindObjectOfType<DialogueTrigger>();
+			dTriggerS = FindObjectOfType<DialogueTrigger>();
+			dTriggerD = FindObjectOfType<DialogueTrigger>();
 		}
 	}
 
@@ -73,7 +75,8 @@ public class DialogueManager : MonoBehaviour {
 	{
 		animator.SetBool("IsOpen", false);
 		thePlayer.canMove = true;
-		dTrigger.UnlockDialogue();
+		dTriggerS.UnlockDialogue();
+		dTriggerD.UnlockDialogue();
 	}
 
 }

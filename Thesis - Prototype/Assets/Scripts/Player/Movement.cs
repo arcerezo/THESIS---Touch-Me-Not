@@ -12,16 +12,28 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
 	private Vector3 rotDirection = Vector3.zero;
 	public Animator anim;
+	public GameObject dialogueTriggerD;
+	public Interactable focus;
 
+    public delegate void OnFocusChanged(Interactable newFocus);
+	public OnFocusChanged onFocusChangedCallback;
+	public GameObject dialogueTriggerS;
+	public bool canMove;
+	
     // Use this for initialization
     void Start()
     {
-
+		anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+		if (!canMove) 
+		{
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            return;
+        }
 
         CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
@@ -49,5 +61,60 @@ public class Movement : MonoBehaviour
         else {
             anim.SetBool ("IsRunning", false);
         }
+    }
+
+	void OnTriggerEnter(Collider coll)
+    {
+        // Interact with items
+        if (coll.gameObject.tag == "Item") {
+            SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
+        }
+
+        //Interact with NPC
+        else if(coll.gameObject.name == "Sybila")
+        {
+            dialogueTriggerS.SetActive(true);
+        }
+        else if (coll.gameObject.name == "Damaso")
+        {
+            dialogueTriggerD.SetActive(true);
+        }
+        SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
+    }
+
+    void OnTriggerExit(Collider coll)
+    {
+        if (coll.gameObject.tag == "NPC")
+        {
+            dialogueTriggerS.SetActive(false);
+            dialogueTriggerD.SetActive(false);
+            RemoveFocus();
+        }
+    }
+    void SetFocus (Interactable newFocus)
+	{
+		if (onFocusChangedCallback != null)
+			onFocusChangedCallback.Invoke(newFocus);
+
+		// If our focus has changed
+		if (focus != newFocus && focus != null)
+		{
+			// Let our previous focus know that it's no longer being focused
+			focus.OnDefocused();
+		}
+
+		// Set our focus to what we hit
+		// If it's not an interactable, simply set it to null
+		focus = newFocus;
+
+		if (focus != null)
+		{
+			// Let our focus know that it's being focused
+			focus.OnFocused(transform);
+		}
+
+	}
+    void RemoveFocus() {
+        focus = null;
     }
 }

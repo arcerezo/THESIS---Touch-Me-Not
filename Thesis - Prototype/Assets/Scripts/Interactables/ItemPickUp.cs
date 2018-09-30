@@ -13,6 +13,11 @@ public class ItemPickUp : Interactable {
 		{
 			Destroy(this.gameObject);
 		}
+		else
+		{
+			instance = this;
+			DontDestroyOnLoad(this.gameObject);
+		}
 	}
 
 	void Start () 
