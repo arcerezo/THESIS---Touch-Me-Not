@@ -5,16 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Tiago's House.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/World.unity
     guid: a572bc044765639429b2b306180ad872
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Chapter_1.unity
     guid: 5838fc03998191149b9c9b747a133c16
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Testing_World.unity
     guid: af803d0aa4541e142bf132bb990807b3
+  - enabled: 1
+    path: Assets/Scenes/Chapter 2/Chapter2_1.unity
+    guid: a4542d49ab8a2fc4d83e2d8a2d08f448
+  - enabled: 1
+    path: Assets/Scenes/Chapter 2/Chapter2_2.unity
+    guid: 3af67944f2c2e9b40a9456b2fccf115e
+  - enabled: 1
+    path: Assets/Scenes/Chapter 2/Chapter2_3.unity
+    guid: f578aa0c52db9a0489bc05aa58d0b259
   m_configObjects: {}

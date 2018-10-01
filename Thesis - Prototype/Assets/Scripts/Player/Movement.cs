@@ -12,12 +12,11 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
 	private Vector3 rotDirection = Vector3.zero;
 	public Animator anim;
-	public GameObject dialogueTriggerD;
+	public GameObject dialogueTriggerD, dialogueTriggerS;
 	public Interactable focus;
 
     public delegate void OnFocusChanged(Interactable newFocus);
 	public OnFocusChanged onFocusChangedCallback;
-	public GameObject dialogueTriggerS;
 	public bool canMove;
 	
     // Use this for initialization

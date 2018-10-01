@@ -36,11 +36,21 @@ public class LevelTrigger : MonoBehaviour {
 					SceneManager.LoadScene("World");
 				    sceneIndex = "World";
 				}
-				else if(sceneIndex == "World")
-				{
-					SceneManager.LoadScene("Tiago's House");
-					sceneIndex = "Tiago's House";
-				}
+					else if(sceneIndex == "World")
+					{
+						SceneManager.LoadScene("Tiago's House");
+						sceneIndex = "Tiago's House";
+					}
+						else if(sceneIndex == "Chapter2_1")
+						{
+							SceneManager.LoadScene("Chapter2_2");
+							sceneIndex = "Chapter2_2";
+						}
+							else if(sceneIndex == "Chapter2_3")
+							{
+								SceneManager.LoadScene("World");
+								sceneIndex = "World";
+							}
 			}
 	}
 	void OnTriggerEnter (Collider coll) {

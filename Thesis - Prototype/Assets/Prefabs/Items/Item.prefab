@@ -110,4 +110,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   interactionTransform: {fileID: 4788499857189982}
+  instance: {fileID: 0}
   item: {fileID: 0}
