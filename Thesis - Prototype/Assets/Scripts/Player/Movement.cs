@@ -117,4 +117,10 @@ public class Movement : MonoBehaviour
     void RemoveFocus() {
         focus = null;
     }
+
+    //TEST FOR ANDROID
+
+    // void MoveForward {
+        
+    // }
 }

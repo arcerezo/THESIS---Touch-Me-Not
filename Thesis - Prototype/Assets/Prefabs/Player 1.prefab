@@ -322,9 +322,9 @@ GameObject:
   - component: {fileID: 4190209139039478}
   - component: {fileID: 95691758429407824}
   - component: {fileID: 54483703672160480}
-  - component: {fileID: 114471935835243968}
   - component: {fileID: 143921883450267502}
   - component: {fileID: 114006136005917236}
+  - component: {fileID: 65831295114707466}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -1394,6 +1394,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &65831295114707466
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455592694839736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4285391, y: 1.7784762, z: 0.3259698}
+  m_Center: {x: 0, y: 0.9211159, z: 0.035268784}
 --- !u!95 &95691758429407824
 Animator:
   serializedVersion: 3
@@ -1427,21 +1439,9 @@ MonoBehaviour:
   gravity: 20
   rotateSpeed: 150
   anim: {fileID: 95691758429407824}
---- !u!114 &114471935835243968
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1455592694839736}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5617aa745fc139428556d17fb09c8da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 5
+  dialogueTriggerD: {fileID: 0}
   focus: {fileID: 0}
   dialogueTriggerS: {fileID: 0}
-  dialogueTriggerD: {fileID: 0}
   canMove: 1
 --- !u!137 &137734347634358638
 SkinnedMeshRenderer:
