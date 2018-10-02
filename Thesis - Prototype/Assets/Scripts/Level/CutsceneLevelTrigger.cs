@@ -12,7 +12,12 @@ public class CutsceneLevelTrigger : MonoBehaviour {
 	}
 	public void LoadNextScene ()
 	{
-	if (sceneIndex == "Tiago's House")
+
+		if  (sceneIndex == "CH_1") {
+			SceneManager.LoadScene("Chapter2_1");
+			sceneIndex = "Chapter2_1";
+		}
+		else if (sceneIndex == "Tiago's House")
 		{
 			SceneManager.LoadScene("World");
 			sceneIndex = "World";
