@@ -1440,8 +1440,8 @@ MonoBehaviour:
   rotateSpeed: 150
   anim: {fileID: 95691758429407824}
   dialogueTriggerD: {fileID: 0}
-  focus: {fileID: 0}
   dialogueTriggerS: {fileID: 0}
+  focus: {fileID: 0}
   canMove: 1
 --- !u!137 &137734347634358638
 SkinnedMeshRenderer:
