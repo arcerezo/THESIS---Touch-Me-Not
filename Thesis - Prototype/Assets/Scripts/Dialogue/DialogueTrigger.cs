@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour {
 
-	public Dialogue dialogue;
 	public bool lockDialogue = false;
+	public Dialogue dialogue;
+	
 
 	void Update()
 	{

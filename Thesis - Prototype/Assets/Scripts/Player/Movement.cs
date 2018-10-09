@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
 	private Vector3 rotDirection = Vector3.zero;
 	public Animator anim;
-	public GameObject dialogueTriggerD, dialogueTriggerS;
+	public GameObject dialogueTriggerD, dialogueTriggerS, dialogueTriggerG;
 	public Interactable focus;
 
     public delegate void OnFocusChanged(Interactable newFocus);
@@ -78,6 +78,10 @@ public class Movement : MonoBehaviour
         {
             dialogueTriggerD.SetActive(true);
         }
+        else if (coll.gameObject.name == "Guevarra")
+        {
+            dialogueTriggerG.SetActive(true);
+        }
         SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
     }
 
@@ -87,6 +91,7 @@ public class Movement : MonoBehaviour
         {
             dialogueTriggerS.SetActive(false);
             dialogueTriggerD.SetActive(false);
+            dialogueTriggerG.SetActive(false);
             RemoveFocus();
         }
     }

@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
     
     public delegate void OnFocusChanged(Interactable newFocus);
 	public OnFocusChanged onFocusChangedCallback;
-    public GameObject dialogueTriggerS, dialogueTriggerD;
+    public GameObject dialogueTriggerS, dialogueTriggerD, dialogueTriggerG;
     public bool canMove;
     
     // void Awake () {
@@ -62,6 +62,10 @@ public class PlayerController : MonoBehaviour {
         {
             dialogueTriggerD.SetActive(true);
         }
+        else if (coll.gameObject.name == "Guevarra")
+        {
+            dialogueTriggerG.SetActive(true);
+        }
         SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
     }
 
@@ -71,6 +75,7 @@ public class PlayerController : MonoBehaviour {
         {
             dialogueTriggerS.SetActive(false);
             dialogueTriggerD.SetActive(false);
+            dialogueTriggerG.SetActive(false);
             RemoveFocus();
         }
     }

@@ -7,13 +7,13 @@ public class CameraFollowRotate : MonoBehaviour {
     [SerializeField]
     private Transform target;
 
-    [SerializeField]
-    private Vector3 offsetPosition;
+     [SerializeField]
+     private Vector3 offsetPosition;
 
-    [SerializeField]
-    private Space offsetPositionSpace = Space.Self;
+    // [SerializeField]
+     private Space offsetPositionSpace = Space.Self;
 
-    [SerializeField]
+   // [SerializeField]
     private bool lookAt = true;
 
     private void LateUpdate()
@@ -30,7 +30,7 @@ public class CameraFollowRotate : MonoBehaviour {
             return;
         }
 
-        // compute position
+        // // compute position
         if (offsetPositionSpace == Space.Self)
         {
             transform.position = target.TransformPoint(offsetPosition);

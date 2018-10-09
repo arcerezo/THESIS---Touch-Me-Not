@@ -19,11 +19,14 @@ public class CutscenesDialogue : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue <string>();
-		StartDialogue(dialogue);
+		if(this.gameObject.activeInHierarchy) 
+		{
+			StartDialogue(dialogue);
+		}
 	}
 	public void StartDialogue(Dialogue dialogue){
 
-		nameText.text = dialogue.name;
+		nameText.text = dialogue.name1;
 
 		//Debug.Log ("starting covo with " + dialogue.name);
 		sentences.Clear ();

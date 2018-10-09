@@ -13,6 +13,10 @@ public class DialogueManager : MonoBehaviour {
 	public DialogueTrigger dTriggerS;
 	public DialogueTrigger dTriggerD;
 	public GameObject dialogueTrigger;
+	public InteractNPC interact;
+	public Dialogue dialogue;
+	public Sprite s1, s2;
+	public bool sprite1Active = false;
 
 	void Start () {
 		sentences = new Queue<string>();
@@ -22,6 +26,20 @@ public class DialogueManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			DisplayNextSentence();
+			
+			dialogue.name2 = "CRISOSTOMO IBARRA";
+			if(sprite1Active)
+			{
+			interact.activeNPC.sprite = s2;
+			nameText.text = dialogue.name2;
+			sprite1Active = false;
+			}
+			else
+			{
+				interact.activeNPC.sprite = s1;
+				nameText.text = dialogue.name1;
+				sprite1Active = true;
+			}
 		}
 		
 		if (dialogueTrigger.activeInHierarchy)
@@ -37,7 +55,10 @@ public class DialogueManager : MonoBehaviour {
 
 		thePlayer.canMove = false;
 
-		nameText.text = dialogue.name;
+		interact.activeNPC.sprite = s1;
+
+		nameText.text = dialogue.name1;
+		sprite1Active = true;
 
 		sentences.Clear();
 
