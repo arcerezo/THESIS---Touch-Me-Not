@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-
     public float speed = 6.0F;
     //public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
@@ -12,7 +11,7 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
 	private Vector3 rotDirection = Vector3.zero;
 	public Animator anim;
-	public GameObject dialogueTriggerD, dialogueTriggerS, dialogueTriggerG;
+	public GameObject dialogueTriggerDam, dialogueTriggerSyb, dialogueTriggerGue, dialogueTriggerPoet;
 	public Interactable focus;
 
     public delegate void OnFocusChanged(Interactable newFocus);
@@ -72,15 +71,19 @@ public class Movement : MonoBehaviour
         //Interact with NPC
         else if(coll.gameObject.name == "Sybila")
         {
-            dialogueTriggerS.SetActive(true);
+            dialogueTriggerSyb.SetActive(true);
         }
         else if (coll.gameObject.name == "Damaso")
         {
-            dialogueTriggerD.SetActive(true);
+            dialogueTriggerDam.SetActive(true);
         }
         else if (coll.gameObject.name == "Guevarra")
         {
-            dialogueTriggerG.SetActive(true);
+            dialogueTriggerGue.SetActive(true);
+        }
+        else if(coll.gameObject.name == "Poet")
+        {
+            dialogueTriggerPoet.SetActive(true);
         }
         SetFocus(coll.GetComponent<Collider>().GetComponent<Interactable>());
     }
@@ -89,9 +92,10 @@ public class Movement : MonoBehaviour
     {
         if (coll.gameObject.tag == "NPC")
         {
-            dialogueTriggerS.SetActive(false);
-            dialogueTriggerD.SetActive(false);
-            dialogueTriggerG.SetActive(false);
+            dialogueTriggerSyb.SetActive(false);
+            dialogueTriggerDam.SetActive(false);
+            dialogueTriggerGue.SetActive(false);
+            dialogueTriggerPoet.SetActive(false);
             RemoveFocus();
         }
     }

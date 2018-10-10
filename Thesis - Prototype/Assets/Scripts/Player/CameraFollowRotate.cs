@@ -10,10 +10,10 @@ public class CameraFollowRotate : MonoBehaviour {
      [SerializeField]
      private Vector3 offsetPosition;
 
-    // [SerializeField]
+    [SerializeField]
      private Space offsetPositionSpace = Space.Self;
 
-   // [SerializeField]
+   [SerializeField]
     private bool lookAt = true;
 
     private void LateUpdate()

@@ -37,5 +37,15 @@ public class CutsceneLevelTrigger : MonoBehaviour {
 						SceneManager.LoadScene("Chapter2_3");
 						sceneIndex = "Chapter2_3";
 					}
+						else if(sceneIndex == "Chapter2_3")
+						{
+							SceneManager.LoadScene("Chapter2_4");
+							sceneIndex = "Chapter2_4";
+						}
+							else if(sceneIndex == "Chapter2_4")
+							{
+								SceneManager.LoadScene("Chapter3_1");
+								sceneIndex = "Chapter3_1";
+							}
 	}
 }

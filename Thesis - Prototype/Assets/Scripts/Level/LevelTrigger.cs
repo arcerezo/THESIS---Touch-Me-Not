@@ -48,9 +48,19 @@ public class LevelTrigger : MonoBehaviour {
 						}
 							else if(sceneIndex == "Chapter2_3")
 							{
-								SceneManager.LoadScene("World");
-								sceneIndex = "World";
+								SceneManager.LoadScene("Chapter2_4");
+								sceneIndex = "Chapter2_4";
 							}
+								else if(sceneIndex == "Chapter2_4")
+								{
+									SceneManager.LoadScene("Chapter3_1");
+									sceneIndex = "Chapter3_1";
+								}
+									else if(sceneIndex == "Chapter3_1")
+									{
+										SceneManager.LoadScene("Chapter3_2");
+										sceneIndex = "Chapter3_2";
+									}
 			}
 	}
 	void OnTriggerEnter (Collider coll) {

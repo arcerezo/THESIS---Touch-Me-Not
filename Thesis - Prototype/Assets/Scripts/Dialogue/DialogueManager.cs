@@ -10,31 +10,36 @@ public class DialogueManager : MonoBehaviour {
 	public Animator animator;
 	private Queue<string> sentences;
 	private Movement thePlayer;
-	public DialogueTrigger dTriggerS;
-	public DialogueTrigger dTriggerD;
+	public DialogueTrigger dTriggerS, dTriggerD, dTriggerG;
 	public GameObject dialogueTrigger;
-	public InteractNPC interact;
 	public Dialogue dialogue;
+	public InteractNPC interact;
 	public Sprite s1, s2;
 	public bool sprite1Active = false;
 
 	void Start () {
+		dialogue = GameObject.FindGameObjectWithTag("NPC").transform.GetChild(2).GetChild(0).GetComponent<DialogueTrigger>().dialogue;
 		sentences = new Queue<string>();
 		thePlayer = FindObjectOfType<Movement>();
 	}
 
 	void Update () {
+		if(thePlayer.focus != null)
+		{
+		interact = thePlayer.focus.GetComponent<InteractNPC>();
+		}
+
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			DisplayNextSentence();
 			
-			dialogue.name2 = "CRISOSTOMO IBARRA";
+			nameText.text = dialogue.name2;
 			if(sprite1Active)
 			{
 			interact.activeNPC.sprite = s2;
 			nameText.text = dialogue.name2;
 			sprite1Active = false;
 			}
-			else
+			else if(!sprite1Active)
 			{
 				interact.activeNPC.sprite = s1;
 				nameText.text = dialogue.name1;
@@ -46,6 +51,7 @@ public class DialogueManager : MonoBehaviour {
 		{
 			dTriggerS = FindObjectOfType<DialogueTrigger>();
 			dTriggerD = FindObjectOfType<DialogueTrigger>();
+			dTriggerG = FindObjectOfType<DialogueTrigger>();
 		}
 	}
 
@@ -58,6 +64,7 @@ public class DialogueManager : MonoBehaviour {
 		interact.activeNPC.sprite = s1;
 
 		nameText.text = dialogue.name1;
+
 		sprite1Active = true;
 
 		sentences.Clear();
@@ -98,6 +105,7 @@ public class DialogueManager : MonoBehaviour {
 		thePlayer.canMove = true;
 		dTriggerS.UnlockDialogue();
 		dTriggerD.UnlockDialogue();
+		dTriggerG.UnlockDialogue();
 	}
 
 }

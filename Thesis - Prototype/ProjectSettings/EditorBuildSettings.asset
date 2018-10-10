@@ -22,11 +22,17 @@ EditorBuildSettings:
     guid: a4542d49ab8a2fc4d83e2d8a2d08f448
   - enabled: 1
     path: Assets/Scenes/Chapter 2/Chapter2_2.unity
-    guid: 00535980695c0ec4e97bffe7afe2a6ea
-  - enabled: 1
-    path: Assets/Scenes/Chapter 2/Chapter2_3.unity
     guid: 3af67944f2c2e9b40a9456b2fccf115e
   - enabled: 1
-    path: Assets/Scenes/Chapter 2/Chapter2_4.unity
+    path: Assets/Scenes/Chapter 2/Chapter2_3.unity
     guid: f578aa0c52db9a0489bc05aa58d0b259
+  - enabled: 1
+    path: Assets/Scenes/Chapter 2/Chapter2_4.unity
+    guid: 8a826050acf33584cb9fa45059cdf82d
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3/Chapter3_1.unity
+    guid: bbf734308370b30418b396858bc42302
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3/Chapter3_2.unity
+    guid: 613248c245d36c646b772332720789d3
   m_configObjects: {}
