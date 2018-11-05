@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 3e13bf040f3d878439ddc717ae17d582
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera
+    100004: Chest
+    100006: Cube
+    100008: Feet.L
+    100010: Feet.R
+    100012: Finger.L
+    100014: Finger.L_end
+    100016: Finger.R
+    100018: Finger.R_end
+    100020: Hand.L
+    100022: Hand.R
+    100024: Head
+    100026: Head_end
+    100028: Hips
+    100030: //RootNode
+    100032: Lamp
+    100034: LegIK.L
+    100036: LegIK.L_end
+    100038: LegIK.R
+    100040: LegIK.R_end
+    100042: LowerArm.L
+    100044: LowerArm.R
+    100046: LowerLeg.L
+    100048: LowerLeg.R
+    100050: Neck
+    100052: PoleTarget.L
+    100054: PoleTarget.L_end
+    100056: PoleTarget.R
+    100058: PoleTarget.R_end
+    100060: Shoulder.L
+    100062: Shoulder.R
+    100064: Spine
+    100066: Thumb.L
+    100068: Thumb.L_end
+    100070: Thumb.R
+    100072: Thumb.R_end
+    100074: Toe.L
+    100076: Toe.L_end
+    100078: Toe.R
+    100080: Toe.R_end
+    100082: UpperArm.L
+    100084: UpperArm.R
+    100086: UpperFinger.L
+    100088: UpperFinger.R
+    100090: UpperLeg.L
+    100092: UpperLeg.R
+    100094: UpperThumb.L
+    100096: UpperThumb.R
+    400000: Armature
+    400002: Camera
+    400004: Chest
+    400006: Cube
+    400008: Feet.L
+    400010: Feet.R
+    400012: Finger.L
+    400014: Finger.L_end
+    400016: Finger.R
+    400018: Finger.R_end
+    400020: Hand.L
+    400022: Hand.R
+    400024: Head
+    400026: Head_end
+    400028: Hips
+    400030: //RootNode
+    400032: Lamp
+    400034: LegIK.L
+    400036: LegIK.L_end
+    400038: LegIK.R
+    400040: LegIK.R_end
+    400042: LowerArm.L
+    400044: LowerArm.R
+    400046: LowerLeg.L
+    400048: LowerLeg.R
+    400050: Neck
+    400052: PoleTarget.L
+    400054: PoleTarget.L_end
+    400056: PoleTarget.R
+    400058: PoleTarget.R_end
+    400060: Shoulder.L
+    400062: Shoulder.R
+    400064: Spine
+    400066: Thumb.L
+    400068: Thumb.L_end
+    400070: Thumb.R
+    400072: Thumb.R_end
+    400074: Toe.L
+    400076: Toe.L_end
+    400078: Toe.R
+    400080: Toe.R_end
+    400082: UpperArm.L
+    400084: UpperArm.R
+    400086: UpperFinger.L
+    400088: UpperFinger.R
+    400090: UpperLeg.L
+    400092: UpperLeg.R
+    400094: UpperThumb.L
+    400096: UpperThumb.R
+    2000000: Camera
+    2100000: Tie
+    2100002: Pants
+    2100004: Skin
+    2100006: Inner_Coat
+    2100008: Gray_white
+    2100010: Hair
+    4300000: Cube
+    7400000: Armature|Action
+    7400002: Armature|Idle
+    7400004: Armature|Run
+    9500000: //RootNode
+    10800000: Lamp
+    13700000: Cube
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray_white
+    second: {fileID: 2100000, guid: df23e8a6b23d3934bb4f5e168775e54c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hair
+    second: {fileID: 2100000, guid: 2d99d836189798c4ba8c264584ceb1fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Inner_Coat
+    second: {fileID: 2100000, guid: 5f3f4a3cf5f07a3488061619aef00acc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pants
+    second: {fileID: 2100000, guid: a95c716f1fde67d4d985f594540873b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 61b82d85bd3d2c045af9fe9e7f6e6581, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tie
+    second: {fileID: 2100000, guid: 95cd84ececc305443870aff385554b12, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
