@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour {
 	public Text dialogueText;
 	public Animator animator;
 	private Queue<string> sentences;
+	[SerializeField]
 	private Movement thePlayer;
 	public DialogueTrigger dTriggerD, dTriggerG;
 	public GameObject dialogueTrigger;
