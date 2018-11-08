@@ -10,9 +10,9 @@ public class DialogueManager : MonoBehaviour {
 	public Animator animator;
 	private Queue<string> sentences;
 	private Movement thePlayer;
-	public DialogueTrigger dTriggerS, dTriggerD, dTriggerG;
+	public DialogueTrigger dTriggerD, dTriggerG;
 	public GameObject dialogueTrigger;
-	public Dialogue dialogue;
+	private Dialogue dialogue;
 	public InteractNPC interact;
 	public Sprite s1, s2;
 	public bool sprite1Active = false;
@@ -49,7 +49,7 @@ public class DialogueManager : MonoBehaviour {
 		
 		if (dialogueTrigger.activeInHierarchy)
 		{
-			dTriggerS = FindObjectOfType<DialogueTrigger>();
+			// dTriggerS = FindObjectOfType<DialogueTrigger>();
 			dTriggerD = FindObjectOfType<DialogueTrigger>();
 			dTriggerG = FindObjectOfType<DialogueTrigger>();
 		}
@@ -103,7 +103,7 @@ public class DialogueManager : MonoBehaviour {
 	{
 		animator.SetBool("IsOpen", false);
 		thePlayer.canMove = true;
-		dTriggerS.UnlockDialogue();
+//		dTriggerS.UnlockDialogue();
 		dTriggerD.UnlockDialogue();
 		dTriggerG.UnlockDialogue();
 	}

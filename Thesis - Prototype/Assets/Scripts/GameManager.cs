@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -26,6 +27,22 @@ public class GameManager : MonoBehaviour {
 	{
 		_instance = this;
 	}
+
+	public void GoToMM()
+	{
+		SceneManager.LoadScene("Main Menu");
+	}
+	public void ExitGame()
+	{
+		Application.Quit();
+	}
+	public void ContinueGame()
+	{
+		Time.timeScale = 1;
+			
+		pauseUI.SetActive(false);
+	}
+
 	public void PauseGame()
 	{
 		if(Time.timeScale == 1)

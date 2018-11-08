@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
 	private Vector3 rotDirection = Vector3.zero;
 	public Animator anim;
-	public GameObject dialogueTriggerDam, dialogueTriggerSyb, dialogueTriggerGue, dialogueTriggerPoet;
+	public GameObject dialogueTriggerDam, dialogueTriggerGue, dialogueTriggerPoet;
 	public Interactable focus;
 
     public delegate void OnFocusChanged(Interactable newFocus);
@@ -69,10 +69,10 @@ public class Movement : MonoBehaviour
         }
 
         //Interact with NPC
-        else if(coll.gameObject.name == "Sybila")
-        {
-            dialogueTriggerSyb.SetActive(true);
-        }
+        // else if(coll.gameObject.name == "Sybila")
+        // {
+        //     dialogueTriggerSyb.SetActive(true);
+        // }
         else if (coll.gameObject.name == "Damaso")
         {
             dialogueTriggerDam.SetActive(true);
@@ -92,7 +92,7 @@ public class Movement : MonoBehaviour
     {
         if (coll.gameObject.tag == "NPC")
         {
-            dialogueTriggerSyb.SetActive(false);
+            // dialogueTriggerSyb.SetActive(false);
             dialogueTriggerDam.SetActive(false);
             dialogueTriggerGue.SetActive(false);
             dialogueTriggerPoet.SetActive(false);
