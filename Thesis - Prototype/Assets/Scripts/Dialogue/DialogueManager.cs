@@ -9,7 +9,6 @@ public class DialogueManager : MonoBehaviour {
 	public Text dialogueText;
 	public Animator animator;
 	private Queue<string> sentences;
-	[SerializeField]
 	private Movement thePlayer;
 	public DialogueTrigger dTriggerD, dTriggerG;
 	public GameObject dialogueTrigger;
@@ -19,7 +18,7 @@ public class DialogueManager : MonoBehaviour {
 	public bool sprite1Active = false;
 
 	void Start () {
-		dialogue = GameObject.FindGameObjectWithTag("NPC").transform.GetChild(2).GetChild(0).GetComponent<DialogueTrigger>().dialogue;
+		dialogue = GameObject.FindGameObjectWithTag("NPC").transform.GetChild(1).GetChild(0).GetComponent<DialogueTrigger>().dialogue;
 		sentences = new Queue<string>();
 		thePlayer = FindObjectOfType<Movement>();
 	}
