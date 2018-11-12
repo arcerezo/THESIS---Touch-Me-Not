@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour {
 
@@ -10,17 +11,18 @@ public class DialogueManager : MonoBehaviour {
 	public Animator animator;
 	private Queue<string> sentences;
 	private Movement thePlayer;
-	public DialogueTrigger dTriggerD, dTriggerG;
+	public DialogueTrigger dTriggerD, dTriggerG, dTriggerP;
 	public GameObject dialogueTrigger;
 	private Dialogue dialogue;
 	public InteractNPC interact;
 	public Sprite s1, s2;
-	public bool sprite1Active = false;
+	public bool sprite1Active = false, talkedToDamaso = false, talkedToGuevarra = false, talkedToPoet = false;
 
 	void Start () {
-		dialogue = GameObject.FindGameObjectWithTag("NPC").transform.GetChild(1).GetChild(0).GetComponent<DialogueTrigger>().dialogue;
+		dialogue = GameObject.FindGameObjectWithTag("NPC1").transform.GetChild(1).GetChild(0).GetComponent<DialogueTrigger>().dialogue;
 		sentences = new Queue<string>();
 		thePlayer = FindObjectOfType<Movement>();
+		//Debug.Log(GameObject.FindGameObjectWithTag("NPC").transform.childCount);
 	}
 
 	void Update () {
@@ -52,6 +54,11 @@ public class DialogueManager : MonoBehaviour {
 			// dTriggerS = FindObjectOfType<DialogueTrigger>();
 			dTriggerD = FindObjectOfType<DialogueTrigger>();
 			dTriggerG = FindObjectOfType<DialogueTrigger>();
+			dTriggerP = FindObjectOfType<DialogueTrigger>();
+		}
+		if (talkedToDamaso == true && talkedToGuevarra == true && talkedToPoet == true)
+		{
+			LoadNextScene();
 		}
 	}
 
@@ -106,6 +113,28 @@ public class DialogueManager : MonoBehaviour {
 //		dTriggerS.UnlockDialogue();
 		dTriggerD.UnlockDialogue();
 		dTriggerG.UnlockDialogue();
+		dTriggerP.UnlockDialogue();
+		CheckInteractNPC();
 	}
 
+	void CheckInteractNPC()
+	{
+		if(interact.name == "Guevarra")
+		{
+			talkedToGuevarra = true;
+		}
+			else if(interact.name == "Damaso")
+			{
+				talkedToDamaso = true;
+			}
+				else if(interact.name == "Poet")
+				{
+					talkedToPoet = true;
+				}
+	}
+
+	void LoadNextScene()
+	{
+			SceneManager.LoadScene("Chapter2_4");
+	}
 }
