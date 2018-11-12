@@ -69128,6 +69128,111 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1471243159}
   m_Mesh: {fileID: 4300000, guid: 768190c0652144645aceec62f37df06f, type: 3}
+--- !u!1001 &1472283472
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224926110415241570, guid: 619961440c6ed9e4c8e4cf1205e3a50a,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 619961440c6ed9e4c8e4cf1205e3a50a, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1472985162
 GameObject:
   m_ObjectHideFlags: 0
