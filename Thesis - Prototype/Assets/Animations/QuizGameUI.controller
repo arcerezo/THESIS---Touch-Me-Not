@@ -5,13 +5,19 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: horse
+  m_Name: QuizGameUI
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: continue
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 1107661144488139732}
+    m_StateMachine: {fileID: 1107172584893828648}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -21,27 +27,13 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!206 &206930711910866844
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Blend Tree
-  m_Childs: []
-  m_BlendParameter: Blend
-  m_BlendParameterY: Blend
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
---- !u!1102 &1102073045243492034
+--- !u!1102 &1102031446662731014
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Armature|ArmatureAction
+  m_Name: continue
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -54,19 +46,19 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2a315747286d4e34a835373a520c367c, type: 3}
+  m_Motion: {fileID: 7400000, guid: 569ee1eedfa78354581fc4e11f000018, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102416047716748684
+--- !u!1102 &1102547524684567600
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Armature|Idle
+  m_Name: continue1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -79,19 +71,19 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400002, guid: 2a315747286d4e34a835373a520c367c, type: 3}
+  m_Motion: {fileID: 7400000, guid: ce7e962de64171b4597f26101aaaa091, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102598973938789276
+--- !u!1102 &1102638130649062660
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Armature|Walk_Final
+  m_Name: continue2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -104,19 +96,19 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400004, guid: 2a315747286d4e34a835373a520c367c, type: 3}
+  m_Motion: {fileID: 7400000, guid: 4f9d8039208bc1742a0f9c733b66ae01, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102621274206060164
+--- !u!1102 &1102960125240706214
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: horse position
+  m_Name: continue3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -129,19 +121,19 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0694c7ef28994204286a08d3b5dc400e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 64927fc4fab1ebb4f80be5776a3aba5e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102788709538354394
+--- !u!1102 &1102962552948417488
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Blend Tree
+  m_Name: New State
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -160,7 +152,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1107 &1107661144488139732
+--- !u!1107 &1107172584893828648
 AnimatorStateMachine:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -169,21 +161,27 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 1102073045243492034}
-    m_Position: {x: 444, y: -48, z: 0}
+    m_State: {fileID: 1102031446662731014}
+    m_Position: {x: 324, y: 48, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102416047716748684}
-    m_Position: {x: 420, y: 84, z: 0}
+    m_State: {fileID: 1102962552948417488}
+    m_Position: {x: 324, y: 96, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102598973938789276}
-    m_Position: {x: 432, y: 24, z: 0}
+    m_State: {fileID: 1102547524684567600}
+    m_Position: {x: 359, y: 161, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102638130649062660}
+    m_Position: {x: 394, y: 226, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102960125240706214}
+    m_Position: {x: 429, y: 291, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 48, y: 24, z: 0}
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102598973938789276}
+  m_DefaultState: {fileID: 1102962552948417488}

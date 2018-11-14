@@ -265,7 +265,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 946454161}
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -969,7 +969,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ang tahanan ni Kapitan Tiago ay nakatayo sa Kalye Anloague.
+  m_Text: Ang matalik na kaibigan ni Kapitan Tiago ay si Don Rafael Ibarra.
 --- !u!222 &154557095
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1209,7 +1209,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kalye Landas
+  m_Text: Senyor Laruha
 --- !u!222 &251414577
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1538,7 +1538,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 946454161}
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1774,7 +1774,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pinoy
+  m_Text: Donya Victorina
 --- !u!222 &497378444
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1982,7 +1982,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 206718224}
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2228,7 +2228,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 206718224}
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2416,7 +2416,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kayle Anloague
+  m_Text: Tenyente Guevarra
 --- !u!222 &754752333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2491,7 +2491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ang may-ari ng tahanan kung saan ginanap ang isang pagtitipon.
+  m_Text: Ang anak ng yumaong kaibigan ni Kapitan Tiago.
 --- !u!222 &810701774
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2566,7 +2566,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kalye Maayos
+  m_Text: Don Rafael Ibarra
 --- !u!222 &856484899
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2775,7 +2775,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ang tawag sa mga Pilipino noong panahon ng mga kastila ay Indio.
+  m_Text: Si Kapitang Tinong ang nagpaunlak kay Crisostomo Ibarra na maghapunan sa
+    kanyang tahanan.
 --- !u!222 &922646397
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3000,7 +3001,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ang tawag sa mga Pilipino noong panahon ng mga kastila ay Indio.
+  m_Text: Si Kapitang Tinong ang nagpaunlak kay Crisostomo Ibarra na maghapunan sa
+    kanyang tahanan.
 --- !u!222 &932457866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3638,7 +3640,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kapitan Tiago
+  m_Text: Maria Clara
 --- !u!222 &1167908318
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4193,7 +4195,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: continue2
           m_BoolArgument: 0
@@ -4439,7 +4441,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: continue2
           m_BoolArgument: 0
@@ -4547,7 +4549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ano ang pangalan ng kalye kung saan nakatayo ang bahay ni Kapitan Tiago?
+  m_Text: Sino ang matalik na kaibigan na tinutukoy ni Kapitan Tiago?
 --- !u!222 &1402357463
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4622,7 +4624,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Si Kapitan Tiago and may-ari ng tahanan kung saan ginanap ang pagtitipon.
+  m_Text: Si Crisostomo Ibarra ang anak ng yumaong kaibigan ni Kapitan Tiago.
 --- !u!222 &1461106951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4697,7 +4699,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Indio
+  m_Text: Kapitang Tinong
 --- !u!222 &1504644166
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4809,8 +4811,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000019073, y: 319}
-  m_SizeDelta: {x: 1760.5, y: 214.5}
+  m_AnchoredPosition: {x: 0.000019073, y: 310}
+  m_SizeDelta: {x: 1760.5, y: 341.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1518495438
 MonoBehaviour:
@@ -4844,7 +4846,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ano ang tawag sa mga Pilipino noong panahon ng mga kastila?
+  m_Text: Sino ang lumapit kay Crisostomo Ibarra upang magpakilala at paunlakan siyang
+    maghapunan sa kanyang tahanan sa tondo?
 --- !u!222 &1518495439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4919,7 +4922,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Erehe
+  m_Text: Ang Balik-bayan
 --- !u!222 &1743200718
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5049,7 +5052,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Si Kapitan Tiago and may-ari ng tahanan kung saan ginanap ang pagtitipon.
+  m_Text: Si Crisostomo Ibarra ang anak ng yumaong kaibigan ni Kapitan Tiago.
 --- !u!222 &1795159446
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5214,7 +5217,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kalye Pojada
+  m_Text: Donya Victorina
 --- !u!222 &1865721814
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5289,7 +5292,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ang tahanan ni Kapitan Tiago ay nakatayo sa Kalye Anloague.
+  m_Text: Ang matalik na kaibigan ni Kapitan Tiago ay si Don Rafael Ibarra.
 --- !u!222 &1975397508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5439,7 +5442,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Filibustero
+  m_Text: Senyor Laruja
 --- !u!222 &1985871079
 CanvasRenderer:
   m_ObjectHideFlags: 0

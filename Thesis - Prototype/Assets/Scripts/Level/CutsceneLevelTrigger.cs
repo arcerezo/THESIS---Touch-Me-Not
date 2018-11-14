@@ -29,8 +29,8 @@ public class CutsceneLevelTrigger : MonoBehaviour {
 				}
 					else if (sceneIndex == "Chapter1_2")
 					{
-						SceneManager.LoadScene("Chapter2");
-						sceneIndex = "Chapter2";
+						SceneManager.LoadScene("Chapter1_Quiz");
+						sceneIndex = "Chapter1_Quiz";
 					}
 						else if (sceneIndex == "Chapter2")
 						{
@@ -54,8 +54,8 @@ public class CutsceneLevelTrigger : MonoBehaviour {
 									}
 										else if(sceneIndex == "Chapter2_4")
 										{
-											SceneManager.LoadScene("Chapter3");
-											sceneIndex = "Chapter3";
+											SceneManager.LoadScene("Chapter2_Quiz");
+											sceneIndex = "Chapter2_Quiz";
 										}
 											else if (sceneIndex == "Chapter3")
 											{

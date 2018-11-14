@@ -11932,7 +11932,7 @@ Animator:
   m_GameObject: {fileID: 272969981}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9b2f22bbdb56a184eaf7e25a211aad91, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23682,6 +23682,10 @@ PlayableDirector:
     value: {fileID: 977214818}
   - key: {fileID: 114789582153629424, guid: ddd01e7f6ed52a542b87af05e92ec85f, type: 2}
     value: {fileID: 977214818}
+  - key: {fileID: 114885809564814638, guid: ddd01e7f6ed52a542b87af05e92ec85f, type: 2}
+    value: {fileID: 272969983}
+  - key: {fileID: 114842227350417760, guid: ddd01e7f6ed52a542b87af05e92ec85f, type: 2}
+    value: {fileID: 1434473907}
   m_ExposedReferences:
     m_References:
     - dfa78e7a048c0f147893c74607bfc47b: {fileID: 1918486277}
@@ -23694,7 +23698,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 501624948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.015831, y: 9.366109, z: -27.138947}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -70539,7 +70543,7 @@ Animator:
   m_GameObject: {fileID: 1434473905}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9b2f22bbdb56a184eaf7e25a211aad91, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -78107,7 +78111,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4824984418261630, guid: fb9981f3e222bf74d9c93551cc6bbe98, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9999922
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4824984418261630, guid: fb9981f3e222bf74d9c93551cc6bbe98, type: 2}
       propertyPath: m_RootOrder

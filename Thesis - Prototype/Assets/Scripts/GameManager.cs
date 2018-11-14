@@ -5,32 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	private static GameManager _instance;
+	// private static GameManager _instance;
 	public GameObject pauseUI;
 	
-	public static GameManager Instance
-	{
-		get
-		{
+	// public static GameManager Instance
+	// {
+	// 	get
+	// 	{
 
-			if (_instance == null)
-			{
-				GameObject go = new GameObject("Game Manager");
-				go.AddComponent<GameManager>();
-			}
-			return _instance;
-		}
-	}
+	// 		if (_instance == null)
+	// 		{
+	// 			GameObject go = new GameObject("Game Manager");
+	// 			go.AddComponent<GameManager>();
+	// 		}
+	// 		return _instance;
+	// 	}
+	// }
 
-	public GameObject item {get; set;}
-	void Awake ()
-	{
-		_instance = this;
-	}
+	// public GameObject item {get; set;}
+	// void Awake ()
+	// {
+	// 	_instance = this;
+	// }
 
 	public void GoToMM()
 	{
-		SceneManager.LoadScene("Main Menu");
+		SceneManager.LoadScene(0);
 	}
 	public void ExitGame()
 	{
