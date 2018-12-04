@@ -79,8 +79,8 @@ public class CutsceneLevelTrigger : MonoBehaviour {
 														}
 															else if(sceneIndex == "Chapter3_5")
 															{
-																SceneManager.LoadScene("Chapter4");
-																sceneIndex = "Chapter4";
+																SceneManager.LoadScene("Chapter3_Quiz");
+																sceneIndex = "Chapter3_Quiz";
 															}
 																else if(sceneIndex == "Chapter4")
 																{
@@ -94,8 +94,8 @@ public class CutsceneLevelTrigger : MonoBehaviour {
 																	}
 																		else if(sceneIndex == "Chapter4_3")
 																		{
-																			SceneManager.LoadScene("Chapter5");
-																			sceneIndex = "Chapter5";
+																			SceneManager.LoadScene("Chapter4_Quiz");
+																			sceneIndex = "Chapter4_Quiz";
 																		}
 																			else if(sceneIndex == "Chapter5")
 																			{
@@ -107,5 +107,15 @@ public class CutsceneLevelTrigger : MonoBehaviour {
 																					SceneManager.LoadScene("Chapter5_2");
 																					sceneIndex = "Chapter5_2";
 																				}
+																					else if(sceneIndex == "Chapter5_2")
+																					{
+																						SceneManager.LoadScene("End Credits");
+																						sceneIndex = "End Credits";
+																					}
+																						else if(sceneIndex == "End Credits")
+																						{
+																							SceneManager.LoadScene("Main Menu");
+																							sceneIndex = "Main Menu";
+																						}
 	}
 }

@@ -60,6 +60,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 3/Chapter3_5.unity
     guid: dadc3b1fc0bbe8a42a6616fe1f78e47f
   - enabled: 1
+    path: Assets/Scenes/Chapter 3/Chapter3_Quiz.unity
+    guid: f95468b4859dbe443b566302cc044e79
+  - enabled: 1
     path: Assets/Scenes/Chapter 4/Chapter4.unity
     guid: 5f2394492917fe04c85686a4c3c2204d
   - enabled: 1
@@ -72,6 +75,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 4/Chapter4_3.unity
     guid: cfdcf07225cd4dc4f8e86a430328ba1a
   - enabled: 1
+    path: Assets/Scenes/Chapter 4/Chapter4_Quiz.unity
+    guid: 30b6bed990b5f674bb705ef7bf72a746
+  - enabled: 1
     path: Assets/Scenes/Chapter 5/Chapter5.unity
     guid: 5330b7487071e5c4294632abe11497b7
   - enabled: 1
@@ -80,4 +86,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter 5/Chapter5_2.unity
     guid: 3a139b1f031ecf34aadcd9ea1410f384
+  - enabled: 1
+    path: Assets/Scenes/Chapter 5/End Credits.unity
+    guid: e255f49e608ade7499d5d7df200bb553
   m_configObjects: {}

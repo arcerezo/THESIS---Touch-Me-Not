@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour {
 	private Queue<string> sentences;
 	private Movement thePlayer;
 	public DialogueTrigger dTriggerD, dTriggerG, dTriggerP;
+	public Text dTaskComp, gTaskComp, mTaskComp;
 	public GameObject dialogueTrigger;
 	private Dialogue dialogue;
 	public InteractNPC interact;
@@ -122,14 +123,17 @@ public class DialogueManager : MonoBehaviour {
 		if(interact.name == "Guevarra")
 		{
 			talkedToGuevarra = true;
+			gTaskComp.color = Color.green;
 		}
 			else if(interact.name == "Damaso")
 			{
 				talkedToDamaso = true;
+				dTaskComp.color = Color.green;
 			}
 				else if(interact.name == "Poet")
 				{
 					talkedToPoet = true;
+					mTaskComp.color = Color.green;
 				}
 	}
 

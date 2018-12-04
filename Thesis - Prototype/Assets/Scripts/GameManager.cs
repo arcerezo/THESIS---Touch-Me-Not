@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
 
 	public void GoToMM()
 	{
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene("Main Menu");
 	}
 	public void ExitGame()
 	{
